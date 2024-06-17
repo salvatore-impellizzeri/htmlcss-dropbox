@@ -66,27 +66,34 @@ img{
 
 .header-bottom{
     width: 100%;
-    height: 70vh;
     background-color: #B4D0E7;
 }
 
-.container-header-bottom{
+    /* CONTAINER 65 */
+
+.container-65{
     width: 65%;
-    min-height: 500px;
     margin: auto;
     padding-top: 70px;
 }
 
-.header-bottom > .container-header-bottom > h1{
+    /* TITOLO */
+
+.header-bottom > .container-65 > h1{
     font-size: 80px;
 }
+
+    /* SEZIONE SOTTO IL TITOLO */
 
 .under-title{
     margin-top: 50px;
     display: flex;
 }
 
+    /* TESTO */
+
 .text-under-title{
+    height: 400px;
     width: 30%;
     font-size: 16px;
     position: relative;
@@ -104,22 +111,159 @@ img{
     margin-bottom: 30px;
 }
 
+    /* IMMAGINE */
+
 .img-header{
     position: relative;
     width: 70%;
 }
 
 .img-header > img{
-    max-width: 1000px;
+    max-width: 900px;  
     position: absolute;
     left: 0;
     top: 0;
 }
 
+/* Lascio 900px perchè ho un 21:9 e per avere un'idea di come sta venendo preferisco metterlo in px sennò viene tutto troppo grande */
+
+
  /* 
                     MAIN
  */
 
+/* CONTAINER-55 */
+
+.container-55{
+    margin: auto;
+    margin-top: 180px;
+    width: 55%;
+ }
+
+    /* TITOLI  */
+
+.container-55 h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.container-55 h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+    /* RADIO BOX */
+
+.container-55 > .radio-box{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.container-55 input[type='radio']{
+    cursor: pointer;
+}
+
+    /* COLUMN CONTAINER */
+
+.column-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+ }
+
+    /* TIPO DI SERVIZIO */
+
+.plan{
+    width: calc(100% / 3 - 40px);
+}
+
+.plan-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    border-top: 1px solid #DFDFE1;
+    border-right: 1px solid #DFDFE1;
+    border-left: 1px solid #DFDFE1;
+}
+
+.icon-plan{
+    margin-right: 5px;
+}
+
+    /* DETTAGLI DEL SERVIZIO */
+
+.detail-plan{
+    height: 100%;
+    border-bottom: 1px solid #DFDFE1;
+    border-right: 1px solid #DFDFE1;
+    border-left: 1px solid #DFDFE1;
+    padding: 30px 25px 0px;
+    border: 1px solid #DFDFE1;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.month{
+    color: grey;
+}
+
+.detail-plan ul:first-of-type{
+    margin: 50px 0px;
+}
+
+.trial{
+    display: flex;
+    justify-content: center;
+}
+
+.detail-plan li{
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.detail-plan i{
+    margin-top: 3px;
+}
+
+.detail-plan ul > li > div{
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.link{
+    text-decoration: underline;
+    color: rgb(0, 60, 255);
+}
+
+.buy-now{
+    margin-top: 30px;
+}
+
+.detail-plan hr{
+    border: 1px solid #DFDFE1;
+    width: 20%;
+    margin: 40px 0px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.detail-plan ul:last-of-type{
+    margin-top: 30px;
+}
+
+.detail-plan .fa-check{
+    color: #0061FF;
+}
 
  /* 
                     FOOTER
@@ -129,7 +273,7 @@ img{
                     DEBUG
  */
 
-.debug .header-top{
+/* .debug .header-top{
     background-color: red;
     border: 3px dashed aqua;
 }
@@ -148,7 +292,7 @@ img{
     border: 3px dashed red;
 }
 
-.debug .container-header-bottom{
+.debug .container-65{
     background-color: yellow;
     border: 3px dashed purple;
 }
@@ -172,3 +316,17 @@ img{
     background-color: blue;
     border: 3px dashed orange;
 }
+
+.debug .container-55{
+    background-color: violet;
+    border: 3px dashed white;
+}
+
+.debug .column-container{
+    background-color: fuchsia;
+    border: 3px dashed cyan;
+}
+
+.debug .plan{
+    background-color: bisque;
+} */
