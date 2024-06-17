@@ -36,9 +36,18 @@ img{
     color: white;
 }
 
+.border{
+    border: 1px solid black;
+}
+
 .white-button{
     background-color: white;
     color: black;
+}
+
+.partner-button{
+    margin-top: 30px;
+    padding: 10px 15px;
 }
 
 /* 
@@ -175,7 +184,7 @@ img{
 
     /* TIPO DI SERVIZIO */
 
-.plan{
+.card{
     width: calc(100% / 3 - 40px);
 }
 
@@ -277,7 +286,31 @@ img{
 }
 
 .text-row{
+    margin-top: 50px;
     width: 600px;
+}
+
+/* PARTNER */
+
+.flex{
+    display: flex;
+}
+
+.partner-img{
+    width: 65%;
+}
+
+.box-right{
+    width: 35%;
+    padding-left: 50px;
+    padding-top: 50px;
+    align-self: flex-start;
+}
+
+/* OPERATION */
+
+.card > p{
+    margin-bottom: 50px;
 }
 
  /* 
