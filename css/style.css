@@ -347,6 +347,27 @@ img{
     fill: white;
 }
 
+.square-middle{
+    display: block;
+    padding: 50px;
+}
+
+.bg-middle > img{
+    display: flex;
+    align-self: flex-start;
+    width: 60%;
+}
+
+.square-middle hr{
+    width: 25%;
+    color: grey;
+    margin: 50px 0;
+}
+
+.square-middle > p{
+    margin-bottom: 50px;
+}
+
 /* BACKGROUND COLOR */
 
 .bg-design{
