@@ -170,6 +170,7 @@ img{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    flex-wrap: wrap;
  }
 
     /* TIPO DI SERVIZIO */
@@ -255,14 +256,28 @@ img{
 
 .bold{
     font-weight: bold;
-}
-
-.detail-plan ul:last-of-type{
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .detail-plan .fa-check{
     color: #0061FF;
+}
+
+/* ROW */
+
+.plan-row{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-row{
+    width: 600px;
 }
 
  /* 
