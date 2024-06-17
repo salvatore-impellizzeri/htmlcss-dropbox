@@ -9,10 +9,44 @@
     font-family: "Open Sans", sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+}
+
+/* 
+                    BUTTON 
+*/
+
+.button-small{
+    padding: 5px 15px;
+}
+
+.button-normal{
+    padding: 10px 20px;
+}
+
+.blue-button{
+    background-color: #0061FF;
+    color: white;
+}
+
+.white-button{
+    background-color: white;
+    color: black;
+}
+
 /* 
                     HEADER
  */
  
+ /* HEADER TOP */
+
 .header-top{
     width: 100%;
     display: flex;
@@ -20,7 +54,7 @@
 }
 
 .left-nav, .right-nav{
-    min-width: 20%;
+    width: 30vw;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -28,15 +62,57 @@
     padding: 0px 10px;
 }
 
-.header-top a{
-    color: black;
-    text-decoration: none;
+/* HEADER BOTTOM */
+
+.header-bottom{
+    width: 100%;
+    background-color: #B4D0E7;
 }
 
-.right-nav a:last-child{
-    background-color: #005FFA;
-    color: white;
-    padding: 5px 15px;
+.container-header-bottom{
+    width: 65%;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.header-bottom > .container-header-bottom > h1{
+    font-size: 80px;
+}
+
+.under-title{
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.text-under-title{
+    width: 30%;
+    font-size: 16px;
+    position: relative;
+}
+
+.text-under-title .fa-arrow-down{
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+}
+
+.text-under-title > *{
+    margin-bottom: 30px;
+}
+
+.img-header{
+    position: relative;
+    width: 70%;
+}
+
+.img-header > img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
  /* 
@@ -65,4 +141,33 @@
 .debug .right-nav{
     background-color: brown;
     border: 3px dashed yellow;
+}
+
+.debug .header-bottom{
+    border: 3px dashed red;
+}
+
+.debug .container-header-bottom{
+    background-color: yellow;
+    border: 3px dashed purple;
+}
+
+.debug .title{
+    background-color: green;
+    border: 3px dashed blue;
+}
+
+.debug .under-title{
+    background-color: yellowgreen;
+    border: 3px dashed red;
+}
+
+.debug .text-under-title{
+    background-color: white;
+    border: 3px dashed black;
+}
+
+.debug .img-header{
+    background-color: blue;
+    border: 3px dashed orange;
 }
