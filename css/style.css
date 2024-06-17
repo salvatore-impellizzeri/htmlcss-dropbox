@@ -6,13 +6,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* 
                     HEADER
  */
+ 
+.header-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.left-nav, .right-nav{
+    min-width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.header-top a{
+    color: black;
+    text-decoration: none;
+}
+
+.right-nav a:last-child{
+    background-color: #005FFA;
+    color: white;
+    padding: 5px 15px;
+}
 
  /* 
                     MAIN
@@ -27,3 +52,17 @@
                     DEBUG
  */
 
+.debug .header-top{
+    background-color: red;
+    border: 3px dashed aqua;
+}
+
+.debug .left-nav{
+    background-color: blue;
+    border: 3px dashed green;
+}
+
+.debug .right-nav{
+    background-color: brown;
+    border: 3px dashed yellow;
+}
