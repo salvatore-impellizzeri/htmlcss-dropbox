@@ -31,6 +31,10 @@ img{
     padding: 10px 20px;
 }
 
+.button-larger{
+    padding: 10px 50px;
+}
+
 .blue-button{
     background-color: #0061FF;
     color: white;
@@ -159,6 +163,11 @@ img{
 .container-55 h3{
     font-size: 25px;
     margin-bottom: 20px;
+}
+
+.container-55 h4{
+    font-size: 20px;
+    margin: 40px 0px;
 }
 
     /* RADIO BOX */
@@ -290,7 +299,7 @@ img{
     width: 600px;
 }
 
-/* PARTNER */
+    /* PARTNER */
 
 .flex{
     display: flex;
@@ -307,24 +316,25 @@ img{
     align-self: flex-start;
 }
 
-/* OPERATION */
+    /* OPERATION */
 
 .card > p{
     margin-bottom: 50px;
 }
 
-/* TEAMS TITOLO */
+    /* TEAMS TITOLO */
 
 .go-down{
     width: 600px;
 }
 
-/* TEAMS */
+    /* TEAMS */
 
 .container-100{
     margin-top: 200px;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .square{
@@ -340,11 +350,16 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.container-100 > .square > .mini-square > svg{
+.mini-square:hover{
+    border: 20px solid #F5F5F5;
+}
+
+.container-100 > .square > .mini-square > img{
+    filter: invert(100%);
     width: 50%;
-    fill: white;
 }
 
 .square-middle{
@@ -368,7 +383,50 @@ img{
     margin-bottom: 50px;
 }
 
-/* BACKGROUND COLOR */
+    /* PROVA GRATUITA */
+
+.container-100 + .bg-hearst{
+    height: calc(100vw / 6);
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container-100 + .bg-hearst > .container-55{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-100 > .container-55 > h2{
+    color: #61082B;
+    margin-bottom: 0;
+    width: 500px;
+}
+
+.container-100 > .container-55 > .button-larger{
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+    /* DOMANTE FREQUENTI */
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space-between:nth-of-type(2n+1){
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.question > .space-between > .fa-angle-down{
+    margin-right: 50px;
+}
+
+    /* BACKGROUND COLOR */
 
 .bg-design{
     border: 20px solid #D1E9CD;
@@ -379,7 +437,7 @@ img{
     background-color: #61082B;
 }
 
-.bug-uf{
+.bg-uf{
     background-color: #0093CE;
 }
 
@@ -406,6 +464,17 @@ img{
  /* 
                     FOOTER
  */
+
+footer{
+    margin-top: 150px;
+    background-color: black;
+    min-height: 500px;
+    padding-top: 100px;
+}
+
+footer > .container-55{
+    
+}
 
  /* 
                     DEBUG
