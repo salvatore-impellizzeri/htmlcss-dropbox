@@ -84,7 +84,28 @@ img{
     align-items: center;
 }
 
+.right-nav > .button-small{
+    margin-left: 30px;
+    align-self: center;
+}
+
+/* NAV-HOVER */
+
+.nav-section:hover{
+    background-color: #313131;
+    color: white;
+}
+
+    /* LIST */
+
 .list{
+    z-index: 1;
+    cursor: default;
+    height: 70px;
+}
+
+.nav-section{
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,15 +117,101 @@ img{
                 color 0.3s ease-in-out;
 }
 
-.list:hover{
+/* ELEMENTI */
+
+.element{
+    list-style: none;
+    width: 100%;
+    display: block;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 0px;
+    padding: 0px;
+    background-color: #313131;
+    color: white;
+    transition: font-size 0.1s ease-in-out,
+                color 0.1s ease-in-out,
+                background-color 0.1s ease-in-out,
+                padding 0.1s ease-in-out
+}
+
+.element:nth-of-type(2n+1){
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+}
+
+.element:hover{
+    background-color: white;
+    color: black;
+    border-right: 0px;
+}
+
+.list:hover .element:nth-of-type(2n+1){
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.list:hover .element{
+    padding: 20px;
+    font-size: 15px;
+}
+
+.list:hover .nav-section{
     background-color: #313131;
     color: white;
 }
 
-.right-nav > .button-small{
-    margin-left: 30px;
-    align-self: center;
+.element-container{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
+
+.element-section{
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    position: absolute;
+    text-align: center;
+    left: 100%;
+    top: 0;
+    width: 0px;
+    line-height: 0px;
+    font-size: 0px;
+    padding: 0px;
+    border: 0px solid black;
+    background-color: white;
+    color: black;
+    transition: font-size 0.1s ease-in-out,
+                width 0.1s ease-in-out,
+                line-height 0.1s ease-in-out,
+                padding 0.1s ease-in-out,
+                border 0.1s ease-in-out,
+                background-color 0.1s ease-in-out;
+}
+
+
+.element-container:hover .description{
+    padding: 5px;
+    font-size: 15px;
+    width: 400px;
+    line-height: 50px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+.description:hover .container{
+    background-color: white;
+    color: black;
+}
+
 
 /* HEADER BOTTOM */
 
