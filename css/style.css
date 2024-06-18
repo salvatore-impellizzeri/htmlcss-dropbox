@@ -332,25 +332,26 @@ img{
 
 .container-100{
     margin-top: 200px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .square{
-    width: calc(100vw / 3);
+    width: calc(100% / 3);
     height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
 
 .mini-square{
-    width: calc(100vw / 6);
+    width: calc(100% / 2);
     height: calc(100vw / 6);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 0px solid transparent; 
     transition: border 0.3s;
 }
 
@@ -416,6 +417,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .space-between:nth-of-type(2n+1){
@@ -516,6 +518,7 @@ footer .nationality{
     align-items: center;
     justify-content: space-between;
     width: 100px;
+    cursor: pointer;
 }
 
 .nationality > .fa-sort-up{
