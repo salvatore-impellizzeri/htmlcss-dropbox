@@ -351,6 +351,7 @@ img{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: border 0.3s;
 }
 
 .mini-square:hover{
