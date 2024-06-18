@@ -414,6 +414,10 @@ img{
     /* DOMANTE FREQUENTI */
 
 .space-between{
+    
+}
+
+.space-between-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -425,8 +429,25 @@ img{
     border-bottom: 1px solid black;
 }
 
-.question > .space-between > .fa-angle-down{
+.question .space-between-flex > .fa-angle-down{
     margin-right: 50px;
+}
+
+.answer{
+    opacity: 0;
+    font-size: 0px;
+    width: 80%;
+    margin-bottom: 0px;
+    transition: font-size 0.3s ease-in-out,
+                opacity 0.5s ease-in-out,
+                margin-bottom 0.3s ease-in-out;
+
+}
+
+.space-between:hover .answer{
+    font-size: 15px;
+    margin-bottom: 20px;
+    opacity: 1;
 }
 
     /* BACKGROUND COLOR */
