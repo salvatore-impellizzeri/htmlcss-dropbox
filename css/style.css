@@ -60,19 +60,50 @@ img{
  
  /* HEADER TOP */
 
-.header-top{
-    width: 100%;
+ .header-top{
+    min-width: 100px;
     display: flex;
     justify-content: space-between;
+    padding: 0px 30px;
 }
 
 .left-nav, .right-nav{
-    width: 30vw;
-    height: 70px;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    height: 70px;
+}
+
+.right-nav{
+    justify-content: flex-end;
+}
+
+.left-nav .img{
+    margin-right: 30px;
+    width: 120px;
+    display: flex;
     align-items: center;
-    padding: 0px 10px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 0px 30px;
+    color: black;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out,
+                color 0.3s ease-in-out;
+}
+
+.list:hover{
+    background-color: #313131;
+    color: white;
+}
+
+.right-nav > .button-small{
+    margin-left: 30px;
+    align-self: center;
 }
 
 /* HEADER BOTTOM */
@@ -412,10 +443,6 @@ img{
 }
 
     /* DOMANTE FREQUENTI */
-
-.space-between{
-    
-}
 
 .space-between-flex{
     display: flex;
