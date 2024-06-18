@@ -469,11 +469,56 @@ footer{
     margin-top: 150px;
     background-color: black;
     min-height: 500px;
-    padding-top: 100px;
+    padding: 50px 0;
 }
 
-footer > .container-55{
-    
+footer > .up-footer{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer > .up-footer > .card-footer{
+    width: calc(100% / 6);
+    display: inline-block;
+    min-height: 100px;
+}
+
+footer > .up-footer > .card-footer > h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+footer > .up-footer > .card-footer > ul{
+    list-style: none;
+}
+
+footer > .up-footer > .card-footer a{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+
+footer > .down-footer > hr{
+    color: white;
+    width: 10%;
+    height: 1px;
+    margin: 50px 0px;
+    display: block;
+}
+
+footer .nationality{
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.nationality > .fa-sort-up{
+    margin-top: 7px;
 }
 
  /* 
