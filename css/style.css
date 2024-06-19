@@ -186,6 +186,26 @@ img{
     border-bottom: 1px solid black;
 }
 
+.border-last{
+    border-top: 0px;
+}
+
+.border-last:hover{
+    border-bottom: 1px solid black;
+}
+
+/* LINK-ELEMENT HOVER */
+
+.link-element:hover .element{
+    color: black;
+    background-color: white;
+    border-right: 0px;
+}
+
+.link-element:hover .no-description{
+    border-right: 1px solid black;
+}
+
     /* DESCRIPTION */
 
 .description{
@@ -213,14 +233,6 @@ img{
     margin-top: -1px;
 }
 
-/* DESCRIPTION HOVER */
-
-.description:hover .element{
-    color: black;
-    background-color: white;
-}
-
-
 /* HEADER BOTTOM */
 
 .header-bottom{
@@ -240,6 +252,7 @@ img{
 
 .header-bottom > .container-65 > h1{
     font-size: 80px;
+    width: 85%;
 }
 
     /* SEZIONE SOTTO IL TITOLO */
